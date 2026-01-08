@@ -6,7 +6,7 @@ import { ChevronRight } from "lucide-react";
 export default function HeroSection() {
 	return (
 		<>
-			<main className="overflow-x-hidden">
+			<main className="overflow-x-hidden h-screen">
 				<section>
 					<div className="py-24 md:pb-32 lg:pb-36 lg:pt-72">
 						<div className="relative mx-auto flex max-w-7xl flex-col px-6 lg:block lg:px-12">
@@ -44,11 +44,12 @@ export default function HeroSection() {
 								</div>
 							</div>
 						</div>
-						<div className="aspect-2/3 absolute inset-1 -z-10 overflow-hidden  border border-black/10 lg:aspect-video  dark:border-white/5">
+						<div className=" h-screen overflow-hidden  absolute inset-1 -z-10   border-black/10   dark:border-white/5">
+							{/* <div className="aspect-2/3 absolute inset-1 -z-10 overflow-hidden  border border-black/10 lg:aspect-video  dark:border-white/5"> */}
 							<video
 								autoPlay
 								loop
-								className="size-full object-cover opacity-50 invert dark:opacity-35 dark:invert-0 dark:lg:opacity-75"
+								className="size-full !object-cover opacity-50 invert dark:opacity-35 dark:invert-0 dark:lg:opacity-75"
 								src="https://ik.imagekit.io/lrigu76hy/tailark/dna-video.mp4?updatedAt=1745736251477"
 							></video>
 						</div>

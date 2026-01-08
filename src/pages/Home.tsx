@@ -7,9 +7,9 @@ export default function Home() {
 	return (
 		<>
 			<HeroSection />
+			<SectionThree />
 			<SectionOne />
 			<SectionTwo />
-			<SectionThree />
 			<SectionFour />
 		</>
 	);
