@@ -24,9 +24,12 @@ export function SectionFour() {
 
 	return (
 		<section className="pt-4 pb-20 overflow-hidden my-20">
-			<div>
-				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias,
-				dignissimos!
+			<div className="max-w-7xl mx-auto text-center mb-20">
+				<h3 className="text-4xl md:text-8xl font-sans font-bold">Some Title</h3>
+				<p className="text-muted-foreground">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+					obcaecati unde explicabo fuga nemo?
+				</p>
 			</div>
 			<div className="relative flex">
 				{/* First set of images */}
