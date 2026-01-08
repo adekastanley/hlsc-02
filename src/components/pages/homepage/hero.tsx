@@ -49,7 +49,7 @@ export default function HeroSection() {
 								autoPlay
 								loop
 								className="size-full !object-cover opacity-50 invert dark:opacity-35 dark:invert-0 dark:lg:opacity-75"
-								src="https://ik.imagekit.io/lrigu76hy/tailark/dna-video.mp4?updatedAt=1745736251477"
+								src="https://www.pexels.com/download/video/5453772/"
 							></video>
 						</div>
 					</div>
