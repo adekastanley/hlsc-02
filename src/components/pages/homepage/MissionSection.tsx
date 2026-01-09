@@ -19,7 +19,7 @@ export function MissionSection() {
 					<h2 className="font-montserrat text-3xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
 						{/* Driving <span className="text-chemonics-lime">positive change</span>{" "}
 						through health systems strengthening and social empowerment. */}
-						Lorem, ipsum dolor.
+						Lorem, ipsum dolor. Lorem, ipsum.
 					</h2>
 				</div>
 			</div>
