@@ -1,16 +1,16 @@
-import HeroSection from "@/components/pages/homepage/hero";
-import { SectionFour } from "@/components/pages/homepage/sectionFour";
-import SectionOne from "@/components/pages/homepage/sectionOne";
-import { SectionThree } from "@/components/pages/homepage/sectionThree";
-import SectionTwo from "@/components/pages/homepage/sectionTwo";
+import { HeroSection } from "@/components/pages/homepage/HeroSection";
+import { MissionSection } from "@/components/pages/homepage/MissionSection";
+import { FocusAreasSection } from "@/components/pages/homepage/FocusAreasSection";
+// import HomeAbout from "@/components/pages/homepage/homeAbout";
+import HomeAbout from "@/components/pages/homepage/homeAbout";
+
 export default function Home() {
 	return (
-		<>
+		<div className="font-montserrat bg-chemonics-navy-light min-h-screen text-white">
 			<HeroSection />
-			<SectionThree />
-			<SectionOne />
-			<SectionTwo />
-			<SectionFour />
-		</>
+			<HomeAbout />
+			<MissionSection />
+			<FocusAreasSection />
+		</div>
 	);
 }

@@ -3,18 +3,18 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import { About } from "./pages/About";
 
-import { HeroHeader } from "@/components/navigation";
-import FooterSection from "@/components/footer";
+import { Navbar } from "./components/Navbar";
+import { SiteFooter } from "./components/SiteFooter";
 
 function App() {
 	return (
 		<Router>
-			<HeroHeader />
+			<Navbar />
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/about" element={<About />} />
 			</Routes>
-			<FooterSection />
+			<SiteFooter />
 		</Router>
 	);
 }

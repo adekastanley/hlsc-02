@@ -51,11 +51,25 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        chemonics: {
+          navy: {
+            DEFAULT: "#181D27",
+            light: "#2A3346",
+            dark: "#0D253F"
+          },
+          lime: {
+            DEFAULT: "#D0DD27",
+            hover: "#E0ED38"
+          }
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      fontFamily: {
+        sans: ["Montserrat", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {
