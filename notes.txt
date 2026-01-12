@@ -1,0 +1,24 @@
+					{[
+							{
+								year: "01",
+								title: "Health Systems Strengthening",
+								description:
+									"Building resilient systems for sustainable healthcare delivery.",
+							},
+							{
+								year: "02",
+								title: "Monitoring, Evaluation & Research",
+								description:
+									"Data-driven insights to inform policy and practice.",
+							},
+							{
+								year: "03",
+								title: "Public Health Interventions",
+								description: "Targeted programs for HIV/AIDS, Malaria, and TB.",
+							},
+							{
+								year: "04",
+								title: "Human Resources for Health",
+								description:
+									"Capacity building and workforce development for the sector.",
+							},

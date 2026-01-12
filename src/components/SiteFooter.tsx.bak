@@ -1,7 +1,7 @@
 // import React from "react";
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
-// import { Logo } from "./logo";
+import { Logo } from "./logo";
 
 export function SiteFooter() {
 	return (
@@ -10,17 +10,10 @@ export function SiteFooter() {
 				<div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
 					{/* Brand Column */}
 					<div className="space-y-4">
-						<div className="flex items-center gap-2 mb-4">
-							<div className="flex h-8 w-8 items-center justify-center bg-chemonics-lime font-bold text-chemonics-navy">
-								H
-							</div>
-							<span className="text-lg font-bold tracking-tight text-white">
-								HSCL
-							</span>
-						</div>
+						<Logo />
 						<p className="font-montserrat text-sm text-gray-400">
-							Health Systems Consult Limited (HSCL). Providing innovative
-							solutions for health and development in Africa.
+							Sanitus Health and Development Foundation. Driving positive change
+							through health systems strengthening.
 						</p>
 					</div>
 
@@ -63,16 +56,18 @@ export function SiteFooter() {
 						</h3>
 						<ul className="space-y-4 text-sm text-gray-300">
 							<li>
-								<span className="block font-semibold text-white">Office:</span>
-								Abuja, Nigeria.
+								<span className="block font-semibold text-white">
+									Abuja Office:
+								</span>
+								Plot 856 Olu Awotesu Street, Jabi District, Abuja, Nigeria.
 							</li>
 							<li>
 								<span className="block font-semibold text-white">Phone:</span>
-								+234 813 026 0407
+								+234 803 496 3547 <br /> +234 903 025 0139
 							</li>
 							<li>
 								<span className="block font-semibold text-white">Email:</span>
-								peze@hscgroup.org
+								info@sanhdef.org
 							</li>
 						</ul>
 					</div>

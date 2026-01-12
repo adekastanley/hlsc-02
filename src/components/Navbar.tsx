@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Logo } from "./logo";
+// import { Logo } from "./logo";
 
 export function Navbar() {
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -23,11 +25,8 @@ export function Navbar() {
 		>
 			<div className="container mx-auto flex items-center justify-between px-6">
 				{/* Logo */}
-				<Link
-					to="/"
-					className="text-2xl font-bold font-montserrat tracking-tighter text-white"
-				>
-					SANHDEF
+				<Link to="/" className="flex items-center gap-2">
+					<Logo />
 				</Link>
 
 				{/* Desktop Menu */}

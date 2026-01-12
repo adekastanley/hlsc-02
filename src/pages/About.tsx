@@ -11,7 +11,7 @@ export function About() {
 			>
 				<h1 className="text-4xl font-bold tracking-tight mb-4">About Page</h1>
 				<p className="text-muted-foreground mb-8">
-					This page demonstrates routing and animations.
+					Lorem ipsum dolor sit amet consectetur.
 				</p>
 
 				<Link
