@@ -1,6 +1,7 @@
 // import React from "react";
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Logo } from "./logo";
 // import { Logo } from "./logo";
 
 export function SiteFooter() {
@@ -11,12 +12,7 @@ export function SiteFooter() {
 					{/* Brand Column */}
 					<div className="space-y-4">
 						<div className="flex items-center gap-2 mb-4">
-							<div className="flex h-8 w-8 items-center justify-center bg-chemonics-lime font-bold text-chemonics-navy">
-								H
-							</div>
-							<span className="text-lg font-bold tracking-tight text-white">
-								HSCL
-							</span>
+							<Logo />
 						</div>
 						<p className="font-montserrat text-sm text-gray-400">
 							Health Systems Consult Limited (HSCL). Providing innovative
