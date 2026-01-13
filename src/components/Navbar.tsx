@@ -3,8 +3,100 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Logo } from "./logo";
-// import { Logo } from "./logo";
+import { ChevronDown, ChevronUp } from "lucide-react";
+import {
+	HoverCard,
+	HoverCardContent,
+	HoverCardTrigger,
+} from "@/components/ui/hover-card";
+import NavHoverContent from "./ui/navHoverContent";
 
+const pcMenu = [
+	{
+		title: "Who We Are",
+		link: "/about",
+		hoverContentProps: {
+			overview: {
+				title: "Who We Are",
+				description:
+					"Our mission is to promote meaningful change around the world to help people live healthier, more productive, and more independent lives.",
+			},
+			links: {
+				title: "WHO WE ARE",
+				items: [
+					{ label: "Our Mission", href: "/mission" },
+					{ label: "Leadership", href: "/leadership" },
+					{ label: "Awards & Recognition", href: "/awards" },
+					{ label: "Diversity, Equity & Inclusion", href: "/dei" },
+				],
+			},
+			inFocus: {
+				title: "IN FOCUS",
+				image: "/assets/samg.webp",
+				articleTitle: "Driving Sustainable Impact",
+				articleDescription:
+					"Learn how our holistic approach ensures long-term development success across the African continent.",
+				articleLink: "/impact",
+			},
+		},
+	},
+	{
+		title: "What We Do",
+		link: "/services",
+		hoverContentProps: {
+			overview: {
+				title: "What We Do",
+				description:
+					"We deliver incisive solutions in health systems strengthening, monitoring & evaluation, and public health interventions.",
+			},
+			links: {
+				title: "SECTORS",
+				items: [
+					{ label: "Health Systems", href: "/health-systems" },
+					{ label: "Monitoring & Evaluation", href: "/mel" },
+					{ label: "Public Health", href: "/public-health" },
+					{ label: "Human Resources", href: "/hrh" },
+				],
+			},
+			inFocus: {
+				title: "FEATURED WORK",
+				image: "/assets/samg.webp",
+				articleTitle: "Kebbi State HIV Intervention",
+				articleDescription:
+					"Improving case finding and treatment outcomes through targeted index case testing strategies.",
+				articleLink: "/projects/kebbi-hiv",
+			},
+		},
+	},
+	{
+		title: "In Focus",
+		link: "/projects",
+		hoverContentProps: {
+			overview: {
+				title: "In Focus",
+				description:
+					"Explore our latest projects, success stories, and thought leadership articles from the field.",
+			},
+			links: {
+				title: "LATEST UPDATES",
+				items: [
+					{ label: "All Projects", href: "/projects" },
+					{ label: "Success Stories", href: "/stories" },
+					{ label: "Publications", href: "/publications" },
+					{ label: "News", href: "/news" },
+				],
+			},
+			inFocus: {
+				title: "HIGHLIGHT",
+				image: "/assets/samg.webp",
+				articleTitle: "ACE3 Quality Assurance",
+				articleDescription:
+					"Ensuring laboratory excellence through rigorous external quality assurance panels.",
+				articleLink: "/projects/ace3",
+			},
+		},
+	},
+];
 export function Navbar() {
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,24 +123,24 @@ export function Navbar() {
 
 				{/* Desktop Menu */}
 				<div className="hidden md:flex items-center gap-8">
-					<Link
-						to="/"
-						className="text-sm font-medium text-white hover:text-chemonics-lime transition-colors"
-					>
-						Home
-					</Link>
-					<Link
-						to="/about"
-						className="text-sm font-medium text-white hover:text-chemonics-lime transition-colors"
-					>
-						About Us
-					</Link>
-					<Link
-						to="/projects"
-						className="text-sm font-medium text-white hover:text-chemonics-lime transition-colors"
-					>
-						Projects
-					</Link>
+					{pcMenu.map((item, index) => {
+						return (
+							<HoverCard key={index} openDelay={0} closeDelay={100}>
+								<HoverCardTrigger asChild>
+									<Link
+										to={item.link}
+										className="group flex items-center gap-1 text-sm font-medium text-white transition-colors hover:text-chemonics-lime data-[state=open]:text-chemonics-lime"
+									>
+										{item.title}
+										<ChevronDown className="h-4 w-4 transition-transform duration-300 group-data-[state=open]:rotate-180" />
+									</Link>
+								</HoverCardTrigger>
+								<HoverCardContent className="w-auto border-none bg-transparent p-0 shadow-none">
+									<NavHoverContent {...item.hoverContentProps} />
+								</HoverCardContent>
+							</HoverCard>
+						);
+					})}
 					<Button className="bg-chemonics-lime text-chemonics-navy font-bold hover:bg-chemonics-lime-hover rounded-full px-6">
 						Contact
 					</Button>

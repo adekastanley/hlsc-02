@@ -60,6 +60,9 @@ module.exports = {
           lime: {
             DEFAULT: "#D0DD27",
             hover: "#E0ED38"
+          },
+          teal: {
+            DEFAULT: "#009ca6",
           }
         },
       },
