@@ -5,7 +5,7 @@ export const Logo = () => {
 				src="/assets/hscl.png"
 				width={100}
 				height={100}
-				className="bg-blend-overlay"
+				className="drop-shadow-[0_0_1px_rgba(255,255,255,0.4)]"
 				alt=""
 			/>
 		</div>
