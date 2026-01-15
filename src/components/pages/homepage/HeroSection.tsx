@@ -5,11 +5,24 @@ export function HeroSection() {
 		<main className="relative h-[85vh] w-full overflow-hidden bg-chemonics-navy-dark min-h-screen">
 			{/* Background Image/Video */}
 			<div className="absolute inset-0 z-0">
-				<img
+				<video
+					autoPlay
+					loop
+					muted
+					playsInline
+					className="h-full w-full object-cover opacity-60"
+				>
+					<source
+						src="https://videos.pexels.com/video-files/3191572/3191572-uhd_2560_1440_25fps.mp4"
+						type="video/mp4"
+					/>
+					Your browser does not support the video tag.
+				</video>
+				{/* <img
 					src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
 					alt="Healthcare professionals"
 					className="h-full w-full object-cover opacity-80"
-				/>
+				/> */}
 			</div>
 
 			{/* Chevron/Arrow Content Container */}
@@ -28,7 +41,7 @@ export function HeroSection() {
 					<div className="mt-8">
 						<Button
 							size="lg"
-							className="rounded-none-none bg-chemonics-lime text-chemonics-navy font-bold hover:bg-chemonics-lime-hover"
+							className="rounded-full bg-chemonics-lime text-chemonics-navy font-bold hover:bg-chemonics-lime-hover"
 						>
 							Learn More
 						</Button>
