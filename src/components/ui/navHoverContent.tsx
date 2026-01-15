@@ -26,7 +26,7 @@ export default function NavHoverContent({
 	inFocus,
 }: NavHoverContentProps) {
 	return (
-		<div className="flex w-[800px] bg-chemonics-teal text-white shadow-xl">
+		<div className="flex w-[800px] bg-chemonics-lime text-white shadow-xl">
 			{/* Left Column - Description */}
 			<div className="w-1/3 border-r border-white/20 p-8">
 				<h3 className="mb-4 font-montserrat text-2xl font-bold">
@@ -80,7 +80,7 @@ export default function NavHoverContent({
 					</p>
 					<Button
 						variant="outline"
-						className="border-white text-white hover:bg-white hover:text-chemonics-teal rounded-full text-xs px-6"
+						className="border-white text-chemonics-lime hover:bg-white hover:text-chemonics-teal rounded-full text-xs px-6"
 						asChild
 					>
 						<a href={inFocus.articleLink}>
