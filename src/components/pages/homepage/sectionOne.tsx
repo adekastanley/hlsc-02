@@ -1,5 +1,5 @@
 import { TextGradientScroll } from "@/components/ui/scrollingText";
-import { MoveRight } from "lucide-react";
+// import { MoveRight } from "lucide-react";
 
 const sectionOneLinks = [
 	{
@@ -24,17 +24,17 @@ export default function SectionOne() {
 	with a holistic and deep knowledge of the health and development sector in Africa.`;
 
 	return (
-		<section className="text-center min-h-[80vh] justify-center lg:px-[10rem] mx-auto flex-col    flex  w-full  bg-white px-10">
+		<section className="text-center min-h-[80vh] justify-center lg:px-[20rem] mx-auto flex-col  flex  w-full  bg-white px-5">
 			<div className="flex  w-full flex-col lg:flex-row gap-10 md:gap-20 ">
-				<div className="lg:w-[50%] text-black  h-full">
+				<div className=" text-black  h-full">
 					<TextGradientScroll
 						text={whyWeExist}
-						className="max-w-7xl lg:px-42 mx-auto text-start font-sans text-2xl md:text-3xl lg:text-4xl font-light lg:text-start justify-start lg:justify-start"
+						className="max-w-7xl lg:px-42 mx-auto text-center font-sans text-2xl md:text-3xl lg:text-4xl font-light justify-center "
 						type="word"
 						textOpacity="soft"
 					/>
 				</div>
-				<div className="lg:w-[20vw]  h-full w-full    relative min-h-20 border-t-2 border-chemonics-navy-light  flex-1 bg-red-90">
+				{/* <div className="lg:w-[20vw]  h-full w-full    relative min-h-20 border-t-2 border-chemonics-navy-light  flex-1 bg-red-90">
 					<ul className="flex flex-col">
 						{sectionOneLinks.map((link, i) => {
 							return (
@@ -53,8 +53,8 @@ export default function SectionOne() {
 							);
 						})}
 					</ul>
-					.
-				</div>
+				
+				</div> */}
 			</div>
 		</section>
 	);
