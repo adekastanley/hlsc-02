@@ -122,14 +122,18 @@ export function Navbar() {
 				</Link>
 
 				{/* Desktop Menu */}
-				<div className="hidden md:flex items-center gap-8">
+				<div
+					className={`hidden md:flex items-center gap-8 p-4 ${
+						isScrolled ? "" : "bg-chemonics-navy p-4 rounded-full px-5"
+					}`}
+				>
 					{pcMenu.map((item, index) => {
 						return (
 							<HoverCard key={index} openDelay={0} closeDelay={100}>
 								<HoverCardTrigger asChild>
 									<Link
 										to={item.link}
-										className="group flex items-center gap-1 text-sm font-medium text-white transition-colors hover:text-chemonics-lime data-[state=open]:text-chemonics-lime"
+										className="group flex items-center gap-1 text-sm font-medium  text-white transition-colors hover:text-chemonics-lime data-[state=open]:text-chemonics-lime"
 									>
 										{item.title}
 										<ChevronDown className="h-4 w-4 transition-transform duration-300 group-data-[state=open]:rotate-180" />
