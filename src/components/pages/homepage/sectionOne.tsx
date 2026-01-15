@@ -20,38 +20,41 @@ const sectionOneLinks = [
 ];
 
 export default function SectionOne() {
-	const whyWeExist = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt impedit similique quidem odit excepturi placeat amet eligendi, eum nostrum earum?`;
+	const whyWeExist = `At HSCL, our cross-cutting and varied experience in providing solutions provides us 
+	with a holistic and deep knowledge of the health and development sector in Africa.`;
 
 	return (
-		<section className="text-center min-h-[80vh] lg:px-[10rem] mx-auto flex-col md:flex-row gap-10  flex lg:justify-between items-center w-full  bg-white">
-			<div className="lg:w-[50%] text-black  h-full">
-				<TextGradientScroll
-					text={whyWeExist}
-					className="max-w-7xl lg:px-42 mx-auto text-center font-sans text-2xl md:text-3xl lg:text-4xl font-light justify-center"
-					type="word"
-					textOpacity="soft"
-				/>
-			</div>
-			<div className="lg:w-[20vw] md:w-[50%] h-full   w-full px-5 lg:px-10  relative min-h-20">
-				<ul className="flex flex-col">
-					{sectionOneLinks.map((link, i) => {
-						return (
-							<li className="text-black  flex items-center justify-between group w-full  max-sm:pr-20 lg:w-[10rem]">
-								<a
-									className="group-hover:text-chemonics-lime-hover"
-									href={link.link}
-									key={i}
-								>
-									{link.title}
-								</a>
-								<span className=" group-hover:text-chemonics-lime-hover lg:opacity-25 group-hover:opacity-100 transition-opacity">
-									<MoveRight />
-								</span>
-							</li>
-						);
-					})}
-				</ul>
-				.
+		<section className="text-center min-h-[80vh] justify-center lg:px-[10rem] mx-auto flex-col    flex  w-full  bg-white px-10">
+			<div className="flex  w-full flex-col lg:flex-row gap-10 md:gap-20 ">
+				<div className="lg:w-[50%] text-black  h-full">
+					<TextGradientScroll
+						text={whyWeExist}
+						className="max-w-7xl lg:px-42 mx-auto text-start font-sans text-2xl md:text-3xl lg:text-4xl font-light lg:text-start justify-start lg:justify-start"
+						type="word"
+						textOpacity="soft"
+					/>
+				</div>
+				<div className="lg:w-[20vw]  h-full w-full    relative min-h-20 border-t-2 border-chemonics-navy-light  flex-1 bg-red-90">
+					<ul className="flex flex-col">
+						{sectionOneLinks.map((link, i) => {
+							return (
+								<li className="text-black flex gap-5 items-center group w-full    lg:min-w-[10rem]">
+									<a
+										className="group-hover:text-chemonics-lime-hover font-bold text-lg leading-10"
+										href={link.link}
+										key={i}
+									>
+										{link.title}
+									</a>
+									<span className=" group-hover:text-chemonics-lime-hover lg:opacity-25 group-hover:opacity-100 transition-opacity">
+										<MoveRight />
+									</span>
+								</li>
+							);
+						})}
+					</ul>
+					.
+				</div>
 			</div>
 		</section>
 	);
