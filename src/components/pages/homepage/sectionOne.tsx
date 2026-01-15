@@ -1,23 +1,23 @@
 import { TextGradientScroll } from "@/components/ui/scrollingText";
 // import { MoveRight } from "lucide-react";
 
-const sectionOneLinks = [
-	{
-		title: "Why We Exist",
-		link: "#why-we-exist",
-		icon: "",
-	},
-	{
-		title: "Our Mission",
-		link: "#our-mission",
-		icon: "",
-	},
-	{
-		title: "Our Vision",
-		link: "#our-vision",
-		icon: "",
-	},
-];
+// const sectionOneLinks = [
+// 	{
+// 		title: "Why We Exist",
+// 		link: "#why-we-exist",
+// 		icon: "",
+// 	},
+// 	{
+// 		title: "Our Mission",
+// 		link: "#our-mission",
+// 		icon: "",
+// 	},
+// 	{
+// 		title: "Our Vision",
+// 		link: "#our-vision",
+// 		icon: "",
+// 	},
+// ];
 
 export default function SectionOne() {
 	const whyWeExist = `At HSCL, our cross-cutting and varied experience in providing solutions provides us 
