@@ -13,14 +13,7 @@ export function HeroSection() {
 			</div>
 
 			{/* Chevron/Arrow Content Container */}
-			<div
-				className="relative z-10 flex h-full w-full items-center md:w-[65%] lg:w-[55%]"
-				style={{
-					background:
-						"linear-gradient(to right, rgba(24, 29, 39, 0.95) 0%, rgba(24, 29, 39, 0.9) 100%)",
-					clipPath: "polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%)",
-				}}
-			>
+			<div className="relative z-10 flex h-full w-full items-center bg-gradient-to-r from-chemonics-navy/95 to-chemonics-navy/90 md:w-[65%] md:[clip-path:polygon(0_0,_100%_0,_85%_50%,_100%_100%,_0_100%)] lg:w-[55%]">
 				<div className="px-6 py-12 md:px-16 lg:px-24">
 					<h1 className="mb-6 font-montserrat text-5xl font-bold leading-tight text-white md:text-7xl">
 						Providing Innovative <br />
