@@ -58,7 +58,7 @@ module.exports = {
             dark: "#0D253F"
           },
           lime: {
-            DEFAULT: "#D0DD27",
+            DEFAULT: "#3fa34d",
             hover: "#E0ED38"
           },
           teal: {
