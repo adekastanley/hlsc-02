@@ -60,15 +60,16 @@ export function SiteFooter() {
 						<ul className="space-y-4 text-sm text-gray-300">
 							<li>
 								<span className="block font-semibold text-white">Office:</span>
-								Abuja, Nigeria.
+								Plot 871 Ojimadu Nwaeze Crescent, off Olu Awotesu cresent Jabi
+								District, Abuja, Nigeria.
 							</li>
 							<li>
 								<span className="block font-semibold text-white">Phone:</span>
-								+234 813 026 0407
+								+234 903 025 0139
 							</li>
 							<li>
 								<span className="block font-semibold text-white">Email:</span>
-								peze@hscgroup.org
+								info@hscgroup.org
 							</li>
 						</ul>
 					</div>
@@ -116,7 +117,7 @@ export function SiteFooter() {
 				</div>
 
 				<div className="mt-16 border-t border-white/10 pt-8 text-center text-xs text-gray-500">
-					<p>© {new Date().getFullYear()} SANHDEF. All Rights Reserved.</p>
+					<p>© {new Date().getFullYear()} HSCL. All Rights Reserved.</p>
 				</div>
 			</div>
 		</footer>
