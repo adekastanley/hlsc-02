@@ -13,7 +13,8 @@ export function HeroSection() {
 					className="h-full w-full object-cover opacity-60"
 				>
 					<source
-						src="https://videos.pexels.com/video-files/3191572/3191572-uhd_2560_1440_25fps.mp4"
+						// src="https://videos.pexels.com/video-files/3191572/3191572-uhd_2560_1440_25fps.mp4"
+						src="/hlsc.mp4"
 						type="video/mp4"
 					/>
 					Your browser does not support the video tag.
