@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Logo } from "./logo";
 import { ChevronDown } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
 import {
 	HoverCard,
 	HoverCardContent,
@@ -97,6 +98,39 @@ const pcMenu = [
 		},
 	},
 ];
+
+const menuVariants = {
+	initial: {
+		opacity: 0,
+		y: -20,
+	},
+	animate: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			duration: 0.3,
+			ease: "easeOut",
+			staggerChildren: 0.1,
+		},
+	},
+	exit: {
+		opacity: 0,
+		y: -20,
+		transition: {
+			duration: 0.2,
+			ease: "easeIn",
+			staggerChildren: 0.05,
+			staggerDirection: -1,
+		},
+	},
+};
+
+const itemVariants = {
+	initial: { opacity: 0, y: 10 },
+	animate: { opacity: 1, y: 0 },
+	exit: { opacity: 0, y: 10 },
+};
+
 export function Navbar() {
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -162,19 +196,29 @@ export function Navbar() {
 			</div>
 
 			{/* Mobile Menu */}
-			{isMenuOpen && (
-				<div className="absolute top-full left-0 w-full bg-chemonics-navy p-6 shadow-xl md:hidden flex flex-col gap-4">
-					<Link to="/" className="text-white font-medium">
-						Home
-					</Link>
-					<Link to="/about" className="text-white font-medium">
-						About Us
-					</Link>
-					<Link to="/projects" className="text-white font-medium">
-						Projects
-					</Link>
-				</div>
-			)}
+			<AnimatePresence>
+				{isMenuOpen && (
+					<motion.div
+						variants={menuVariants}
+						initial="initial"
+						animate="animate"
+						exit="exit"
+						className="absolute top-full h-screen pt-20 left-0 w-full bg-chemonics-navy p-6 shadow-xl md:hidden flex flex-col gap-4"
+					>
+						{[
+							{ title: "Who We Are", link: "/" },
+							{ title: "What We Do", link: "/about" },
+							{ title: "In Focus", link: "/projects" },
+						].map((item, index) => (
+							<motion.div key={index} variants={itemVariants}>
+								<Link to={item.link} className="text-white font-medium block">
+									{item.title}
+								</Link>
+							</motion.div>
+						))}
+					</motion.div>
+				)}
+			</AnimatePresence>
 		</nav>
 	);
 }
