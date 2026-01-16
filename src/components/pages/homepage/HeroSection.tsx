@@ -34,9 +34,7 @@ export function HeroSection() {
 						Development
 					</h1>
 					<p className="mb-8 max-w-2xl font-montserrat text-lg text-gray-200 md:text-xl">
-						At HSCL, our cross-cutting and varied experience provides us with a
-						holistic and deep knowledge of the health and development sector in
-						Africa.
+						Designing Health Systems That Work for People & Places
 					</p>
 					<div className="mt-8">
 						<Button

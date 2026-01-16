@@ -11,9 +11,9 @@ export function MissionSection() {
 			<div className="relative z-10 flex h-full items-center justify-center px-6">
 				<div className="max-w-4xl text-center">
 					<h2 className="font-montserrat text-3xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
-						Providing{" "}
-						<span className="text-chemonics-lime">incisive solutions</span>{" "}
-						backed by our strong understanding of the local environment.
+						Turning{" "}
+						<span className="text-chemonics-lime">Data into Decisions</span> and
+						Decisions into <span className="text-chemonics-lime">Impact</span>
 					</h2>
 				</div>
 			</div>
