@@ -33,7 +33,7 @@ const pcMenu = [
 			},
 			inFocus: {
 				title: "IN FOCUS",
-				image: "/assets/samg.webp",
+				image: "/assets/three.jpg",
 				articleTitle: "Driving Sustainable Impact",
 				articleDescription:
 					"Learn how our holistic approach ensures long-term development success across the African continent.",
@@ -44,6 +44,7 @@ const pcMenu = [
 	{
 		title: "What We Do",
 		link: "/services",
+
 		hoverContentProps: {
 			overview: {
 				title: "What We Do",
@@ -61,7 +62,7 @@ const pcMenu = [
 			},
 			inFocus: {
 				title: "FEATURED WORK",
-				image: "/assets/samg.webp",
+				image: "/assets/two.PNG",
 				articleTitle: "Kebbi State HIV Intervention",
 				articleDescription:
 					"Improving case finding and treatment outcomes through targeted index case testing strategies.",
