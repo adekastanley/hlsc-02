@@ -25,7 +25,7 @@ export default function SectionOne() {
 
 	return (
 		<section className="text-center min-h-[80vh] justify-center lg:px-[20rem] mx-auto flex-col  flex  w-full  bg-white px-5">
-			<div className="flex  w-full flex-col lg:flex-row gap-10 md:gap-20 ">
+			<div className="flex  w-full flex-col lg:flex-row  ">
 				<div className=" text-black  h-full">
 					<TextGradientScroll
 						text={whyWeExist}

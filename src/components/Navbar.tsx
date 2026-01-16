@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Logo } from "./logo";
 import { ChevronDown } from "lucide-react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, Variants } from "framer-motion";
 import {
 	HoverCard,
 	HoverCardContent,
@@ -99,7 +99,7 @@ const pcMenu = [
 	},
 ];
 
-const menuVariants = {
+const menuVariants: Variants = {
 	initial: {
 		opacity: 0,
 		y: -20,
@@ -125,7 +125,7 @@ const menuVariants = {
 	},
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
 	initial: { opacity: 0, y: 10 },
 	animate: { opacity: 1, y: 0 },
 	exit: { opacity: 0, y: 10 },
