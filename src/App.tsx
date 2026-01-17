@@ -1,5 +1,6 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import { About } from "./pages/About";
 import { Navbar } from "@/components/Navbar";
 import { SiteFooter } from "@/components/SiteFooter";
 
@@ -10,7 +11,10 @@ function App() {
 		<main className="font-montserrat">
 			<Router>
 				<Navbar />
-				<Home />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/about" element={<About />} />
+				</Routes>
 				<SiteFooter />
 			</Router>
 		</main>

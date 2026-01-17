@@ -25,10 +25,9 @@ const pcMenu = [
 			links: {
 				title: "WHO WE ARE",
 				items: [
-					{ label: "Our Mission", href: "/mission" },
-					{ label: "Leadership", href: "/leadership" },
-					{ label: "Awards & Recognition", href: "/awards" },
-					{ label: "Diversity, Equity & Inclusion", href: "/dei" },
+					{ label: "Our Mission", href: "/about#mission" },
+					{ label: "Leadership", href: "/about#leadership" },
+					{ label: "Core Values", href: "/about#values" },
 				],
 			},
 			inFocus: {
