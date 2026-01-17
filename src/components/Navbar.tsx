@@ -42,7 +42,7 @@ const pcMenu = [
 	},
 	{
 		title: "What We Do",
-		link: "/services",
+		link: "/our-work",
 
 		hoverContentProps: {
 			overview: {
@@ -53,10 +53,10 @@ const pcMenu = [
 			links: {
 				title: "SECTORS",
 				items: [
-					{ label: "Health Systems", href: "/health-systems" },
-					{ label: "Monitoring & Evaluation", href: "/mel" },
-					{ label: "Public Health", href: "/public-health" },
-					{ label: "Human Resources", href: "/hrh" },
+					{ label: "Health Systems", href: "/our-work#health-systems" },
+					{ label: "Monitoring & Evaluation", href: "/our-work#mel" },
+					{ label: "Public Health", href: "/our-work#public-health" },
+					{ label: "Human Resources", href: "/our-work#hrh" },
 				],
 			},
 			inFocus: {
@@ -206,8 +206,8 @@ export function Navbar() {
 						className="absolute top-full h-screen pt-20 left-0 w-full bg-chemonics-navy p-6 shadow-xl md:hidden flex flex-col gap-4"
 					>
 						{[
-							{ title: "Who We Are", link: "/" },
-							{ title: "What We Do", link: "/about" },
+							{ title: "Who We Are", link: "/about" },
+							{ title: "What We Do", link: "/our-work" },
 							{ title: "In Focus", link: "/projects" },
 						].map((item, index) => (
 							<motion.div key={index} variants={itemVariants}>
