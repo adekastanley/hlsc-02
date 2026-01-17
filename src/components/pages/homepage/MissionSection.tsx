@@ -2,9 +2,14 @@ export function MissionSection() {
 	return (
 		<section className="relative h-[600px] overflow-hidden bg-chemonics-navy-dark">
 			{/* Background Video/Image Layer */}
+			{/* <div
+				style={{ backgroundImage: "url(/assets/samg.webp)" }}
+				className="absolute inset-0 z-0 opacity-40 bg-fixed bg-no-repeat bg-center  bg-cover"
+			></div> */}
 			<div
 				style={{ backgroundImage: "url(/assets/samg.webp)" }}
-				className="absolute inset-0 z-0 opacity-40 bg-fixed bg-no-repeat bg-center bg-cover"
+				className="absolute inset-0 z-0 opacity-40 bg-no-repeat bg-center bg-cover 
+               lg:bg-fixed"
 			></div>
 
 			{/* Overlay Content */}
