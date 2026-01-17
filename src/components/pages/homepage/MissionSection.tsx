@@ -4,7 +4,7 @@ export function MissionSection() {
 			{/* Background Video/Image Layer */}
 			<div
 				style={{ backgroundImage: "url(/assets/samg.webp)" }}
-				className="absolute inset-0 z-0 opacity-40 bg-fixed bg-no-repeat bg-cover"
+				className="absolute inset-0 z-0 opacity-40 bg-fixed bg-no-repeat bg-center bg-cover"
 			></div>
 
 			{/* Overlay Content */}

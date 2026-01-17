@@ -26,7 +26,7 @@ export default function NavHoverContent({
 	inFocus,
 }: NavHoverContentProps) {
 	return (
-		<div className="flex rounded-3xl w-[800px] bg-chemonics-lime text-white shadow-xl">
+		<div className="flex rounded-3xlgit  w-[800px] bg-chemonics-lime text-white shadow-xl">
 			{/* Left Column - Description */}
 			<div className="w-1/3 border-r border-white/20 p-8">
 				<h3 className="mb-4 font-montserrat text-2xl font-bold">

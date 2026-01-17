@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
+
 import {
 	Card,
 	CardContent,
@@ -7,6 +8,7 @@ import {
 	CardTitle,
 	CardDescription,
 } from "@/components/ui/card";
+
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 
