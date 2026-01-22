@@ -3,6 +3,7 @@ import { MissionSection } from "@/components/pages/homepage/MissionSection";
 import { FocusAreasSection } from "@/components/pages/homepage/FocusAreasSection";
 import { FeaturedProjectsSection } from "@/components/pages/homepage/FeaturedProjectsSection";
 import SectionOne from "@/components/pages/homepage/sectionOne";
+import ServicesSection from "@/components/pages/homepage/services";
 
 export default function Home() {
 	return (
@@ -11,6 +12,7 @@ export default function Home() {
 			<SectionOne />
 			<MissionSection />
 			<FocusAreasSection />
+			<ServicesSection />
 			<FeaturedProjectsSection />
 		</div>
 	);
