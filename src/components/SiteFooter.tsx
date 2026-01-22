@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 import { Logo } from "./logo";
+import NewsLetterButton from "./ui/newsletter";
 // import { Logo } from "./logo";
 
 export function SiteFooter() {
@@ -18,6 +19,7 @@ export function SiteFooter() {
 							Health Systems Consult Limited (HSCL). Providing innovative
 							solutions for health and development in Africa.
 						</p>
+						<NewsLetterButton />
 					</div>
 
 					{/* Quick Links */}
