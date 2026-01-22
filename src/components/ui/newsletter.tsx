@@ -22,7 +22,7 @@ export default function NewsLetterButton() {
 					<div className="flex p-1 bg-white/12 backdrop-blur-md rounded-full border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.12),0_2px_8px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,0.1)] before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-b before:from-white/5 before:to-transparent before:pointer-events-none relative gap-3 shadow hover:bg-white/16 hover:border-white/30 hover:shadow-[0_12px_40px_rgba(0,0,0,0.18),0_4px_12px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.15)] transition-all duration-500 ease-out hover:scale-[1.02]">
 						<Input
 							type="email"
-							placeholder="Enter your email"
+							placeholder="Subscribe"
 							value={email}
 							onChange={(e) => setEmail(e.target.value)}
 							required

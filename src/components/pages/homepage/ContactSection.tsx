@@ -10,7 +10,7 @@ import {
 
 export function ContactSection() {
 	return (
-		<section className="py-20 px-6">
+		<section className="py-20 px-6 bg-white">
 			<div className="container mx-auto">
 				<div className="overflow-hidden rounded-[3rem] border border-gray-200 bg-white shadow-xl lg:flex">
 					{/* Left Column: Contact Info */}

@@ -29,7 +29,7 @@ const projects = [
 
 export function FeaturedProjectsSection() {
 	return (
-		<section className="bg-gray-50 py-24">
+		<section className="bg-chemonics-navy py-24">
 			<div className="container mx-auto px-6">
 				<div className="mb-12 flex items-end justify-between">
 					<div>
